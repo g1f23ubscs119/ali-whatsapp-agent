@@ -1,0 +1,5 @@
+﻿backend/node_modules/
+backend/.env
+backend/auth_info/
+backend/data.json
+backend/ngrok.exe
