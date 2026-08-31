@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Opening dashboard...</title></head>
+<body>
+<p>Opening your dashboard...</p>
+<script>
+fetch('current-url.txt?t=' + Date.now())
+  .then(r => r.text())
+  .then(url => { window.location.href = url.trim(); })
+  .catch(() => { document.body.innerHTML = 'Could not load link. Refresh to try again.'; });
+</script>
+</body></html>
